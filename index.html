@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spindle Calculator</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+</head><body>
+<div class="card">
+<h1>🪵 Spindle Calculator</h1>
+
+<div class="tabs">
+<button id="gapBtn" class="active">From Max Gap</button>
+<button id="countBtn">From Spindles</button>
+</div>
+
+<div id="gapMode">
+<label>Rail Length (mm)</label><input id="l1" type="number">
+<label>Spindle Width (mm)</label><input id="w1" type="number" value="32">
+<label>Maximum Gap (mm)</label><input id="g1" type="number" value="99">
+</div>
+
+<div id="countMode" style="display:none">
+<label>Rail Length (mm)</label><input id="l2" type="number">
+<label>Spindle Width (mm)</label><input id="w2" type="number" value="32">
+<label>Number of Spindles</label><input id="n2" type="number">
+</div>
+
+<div id="out"></div>
+</div>
+<script src="script.js"></script>
+</body></html>
